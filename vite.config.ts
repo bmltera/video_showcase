@@ -5,6 +5,6 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/video_showcase/",
+    //base: "/video_showcase/",
     plugins: [react(), svgr()],
 });
