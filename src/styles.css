@@ -1,50 +1,123 @@
-*{
+* {
     box-sizing: border-box;
+
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: none;
 }
 
 body {
-    margin: 0
+    margin: 0;
+    width: 100%;
+    border: 0px dashed red;
+    font-size: 14;
+    
 }
 
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: #111111;
+    color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
-    gap: 2rem;
-    padding: 0
+    gap: 3rem;
+    padding: 2rem
 }
 
-.site-title{
-    font-size: 2rem;
+.site-title {
+    font-size: 2.7rem;
 }
 
-.nav ul{
+.nav ul {
     padding: 0;
-    margin: 0;
+    margin: 0rem 3rem;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.4rem;
 }
 
 .nav a {
     color: inherit;
     text-decoration: none;
     height: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
-    padding:.25rem;
+    padding: .25rem;
 }
 
 .nav li:active {
-    color:#111;
+    color: #030303;
 
 }
 
 .nav li:hover {
-    color:#777;
+    color: #d6d6d6;
 
+
+}
+
+.parent-video{
+    border: 0px solid black;
+    margin: 1rem;
+    padding: 0.5rem 1rem; 
+    text-align: center;
     
 }
 
+.child-video{
+    display: inline-block;
+    border: 0px solid red;
+    padding: 1rem 2.5rem;
+    vertical-align: middle;
+    width: 50%;
+
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+
+
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.main{
+
+    top: 100px;
+    left: 0;
+
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    display:flex;
+    place-items: center;
+    justify-content: center;
+    min-width: 600px;
+    box-sizing: border-box;
+
+}
+
+.home-text1{
+    font-size: 16pt;
+    font-family: Verdana, sans-serif;
+
+}
+
+.home-text2{
+    font-size: 16pt;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+
+}

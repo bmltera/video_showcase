@@ -5,12 +5,12 @@ export default createBoard({
     name: 'App',
     Board: () => <App />,
     environmentProps: {
-        windowWidth: 1920,
-        windowHeight: 1080,
-        windowBackgroundColor: '#1e1e1e',
-        canvasBackgroundColor: '#a4a4a4',
-        canvasWidth: 982,
-        canvasHeight: 708,
+        windowWidth: 1024,
+        windowHeight: 768,
+        windowBackgroundColor: '#6a6a6a',
+        canvasBackgroundColor: '#aaaaaa',
+        canvasWidth: 638,
+        canvasHeight: 834,
     },
     isSnippet: false
 });

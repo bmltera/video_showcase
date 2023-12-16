@@ -1,7 +1,11 @@
 export default function Navbar(){
     return <nav className="nav">
-        <a href="/" className="site-title">RED STUDIO</a>
+        <a href="/" className="site-title">BILL STUDIO</a>
         <ul>
+            <li className="home">
+                <a href="/">Home</a>
+            </li>
+
             <li className="active">
                 <a href="/booking">Booking</a>
             </li>
