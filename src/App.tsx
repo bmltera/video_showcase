@@ -16,9 +16,11 @@ import "./styles.css"
 
 
 function App() {
+    {/* @ts-expect-error Server Component */}
     let Component = <Home />
     switch (window.location.pathname) {
         case "/":
+            {/* @ts-expect-error Server Component */}
             Component = <Home />
             break
         case "/booking":
@@ -39,9 +41,11 @@ function App() {
             <div className = "main">
                 <Router>
                 <Routes>
+                    {/* @ts-expect-error Server Component */}
                     <Route path='/' element={<Home />} />
                     <Route path='/booking' element={<Booking />} />
                     <Route path='/Gallery' element={<Gallery />} />
+                    <Route path='/Blog' element={<Blog />} />
                 </Routes>
             </Router>
             </div>
