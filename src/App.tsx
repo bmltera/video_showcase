@@ -8,7 +8,7 @@ import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
 import { useNavigate } from 'react-router-dom';
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Router, Route, Routes} from "react-router-dom"
 
 import "./styles.css"
 
@@ -39,15 +39,15 @@ function App() {
         <div >
             <header><Navbar /></header>
             <div className = "main">
-                <Router>
+                <BrowserRouter>
                 <Routes>
                     {/* @ts-expect-error Server Component */}
-                    <Route path='' element={<Home />} />
-                    <Route path='booking' element={<Booking />} />
-                    <Route path='gallery' element={<Gallery />} />
-                    <Route path='blog' element={<Blog />} />
+                    <Route path='/' element={<Home />} />
+                    <Route path='/booking' element={<Booking />} />
+                    <Route path='/gallery' element={<Gallery />} />
+                    <Route path='/blog' element={<Blog />} />
                 </Routes>
-            </Router>
+            </BrowserRouter>
             </div>
         </div>
 
