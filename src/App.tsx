@@ -42,10 +42,10 @@ function App() {
                 <Router>
                 <Routes>
                     {/* @ts-expect-error Server Component */}
-                    <Route path='/' element={<Home />} />
-                    <Route path='/booking' element={<Booking />} />
-                    <Route path='/gallery' element={<Gallery />} />
-                    <Route path='/blog' element={<Blog />} />
+                    <Route path='' element={<Home />} />
+                    <Route path='booking' element={<Booking />} />
+                    <Route path='gallery' element={<Gallery />} />
+                    <Route path='blog' element={<Blog />} />
                 </Routes>
             </Router>
             </div>
