@@ -4,6 +4,8 @@ import Gallery from '../pages/Gallery';
 import { Navigate } from 'react-router-dom';
 import ReactDOM from "react-dom";
 import React from "react";
+import Image from "./img/hand.png";
+
 
 export default function Home() {
     const [goToGallery, setGoToGallery] = React.useState(false);
@@ -32,7 +34,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="child-video">
-                    <img src="src\assets\banner2.png" width="580" />
+                    <img src=".\public\banner2.png" width="580" />
                 </div>
             </div>
             <div className="home-text2" style={{ margin: "2rem 8rem" }}>
