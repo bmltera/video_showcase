@@ -34,7 +34,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="child-video">
-                    <img src=".\public\banner2.png" width="580" />
+                    <img src="/banner2.png" width="580" />
                 </div>
             </div>
             <div className="home-text2" style={{ margin: "2rem 8rem" }}>
